@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
 
         } catch (error) {
-            console.error('Error:', error);
+            console.error('Error:', error); 
             paymentInfoDiv.innerHTML = `<p style="color: red;"><strong>Error:</strong> ${error.message}</p>`;
         }
     });
