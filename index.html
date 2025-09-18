@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus - Apoyo Local Inmediato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <header class="main-header">
+        <h1>NEXUS</h1>
+        <p>Apoyo Local Inmediato. Conectando tu ayuda con quienes la necesitan, al instante.</p>
+    </header>
+    <main class="causes-container">
+        <article class="cause-card">
+            <img src="/guitarrero.jpg" alt="Imagen de un músico callejero">
+            <div class="card-content">
+                <h2>El Guitarrero</h2>
+                <p>Alegra las calles del centro con su música. Tu apoyo le ayuda a mantener su equipo y seguir compartiendo su arte con la comunidad.</p>
+                <button class="support-button" data-cause="Apoyo para El Guitarrero">Apoyar Causa</button>
+                <a href="/guitarrero_page.html"></a>
+            </div>
+        </article>
+        <article class="cause-card">
+            <img src="/jardin_comunitario.jpg" alt="Imagen de un jardín urbano">
+            <div class="card-content">
+                <h2>Jardín Comunitario</h2>
+                <p>Un pulmón verde en medio de la ciudad, cultivado por vecinos. Necesitan nuevas herramientas y semillas para la próxima temporada.</p>
+                <button class="support-button" data-cause="Apoyo para Jardín Comunitario">Apoyar Causa</button>
+            </div>
+        </article>
+        <article class="cause-card">
+            <img src="/cafeteria-in.jpg" alt="Imagen del interior de una cafetería">
+            <div class="card-content">
+                <h2>Café 'El Despertar'</h2>
+                <p>Este pequeño café local lucha por competir con las grandes cadenas. Tu contribución les permite seguir ofreciendo un espacio único.</p>
+                <button class="support-button" data-cause="Apoyo para Café 'El Despertar'">Apoyar Causa</button>
+            </div>
+        </article>
+    </main>
+    <div id="payment-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button class="close-button">&times;</button>
+            <h2 id="modal-title">Apoyar Causa</h2>
+            <div id="modal-form">
+                <p>Ingresa el monto y la divisa para continuar.</p>
+                <input type="number" id="amount-input" placeholder="Monto (ej. 5)" min="1" step="any">
+                <select id="currency-input">
+                    <option value="USD">USD</option>
+                    <option value="MXN">MXN</option>
+                    <option value="EUR">EUR</option>
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
+                </select>
+                <button id="confirm-support-button">¡Apoyar Ahora!</button>
+            </div>
+            <div id="payment-info"></div>
+        </div>
+    </div>
+<script src="scripts.js"></script>
+</body>
+</html>

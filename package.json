@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@interledger/open-payments": "^7.1.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0"
+  }
+}

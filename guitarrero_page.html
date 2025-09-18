@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 40px auto; text-align: center; }
+        .cause { border: 1px solid #ccc; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+        input, select, button { padding: 10px; font-size: 16px; margin: 5px; }
+        #payment-info { margin-top: 20px; background-color: #f0f0f0; padding: 15px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+    <h1>Nexus</h1>
+    <p>¡Apoya a los creadores y causas de tu comunidad de forma fácil y directa!</p>
+
+    <div class="cause">
+        <h2>🎸 Artista Urbano: El Guitarrero</h2>
+        <p>Alegra las calles del centro con su música. ¡Apóyalo con una propina!</p>
+        
+        <div>
+            <input type="number" id="amount-input" placeholder="Monto (ej. 5)" min="1" step="any">
+            <select id="currency-input">
+                <option value="USD">USD</option>
+                <option value="MXN">MXN</option>
+                <option value="EUR">EUR</option>
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+            </select>
+        </div>
+        <button id="support-button">¡Apoyar Ahora!</button>
+    </div>
+
+    <div id="payment-info">
+        <p>Aquí aparecerán las instrucciones para completar tu apoyo.</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
